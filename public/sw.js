@@ -4,12 +4,13 @@ self.addEventListener('install', (event) => {
         .then((cache) => {
           return cache.addAll([
             './',
-            'offline.html',
+            'index.html',
             'stylesheets/offline.css',
             'images/a.jpg',
             'images/b.jpg',
             'images/c.jpg',
-            'images/d.jpg'
+            'images/d.jpg',
+            'manifest.json'
          ]);
         })
         .then(() => {
